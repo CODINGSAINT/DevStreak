@@ -1,0 +1,9 @@
+import os
+
+BACKEND_URL = os.getenv("DEVSTREAK_BACKEND_URL", "http://localhost:8080")
+USER_ID = os.getenv("DEVSTREAK_USER_ID", "pallav")
+GIT_ROOT = os.getenv("DEVSTREAK_GIT_ROOT", os.getcwd())
+LEETCODE_USERNAME = os.getenv("DEVSTREAK_LEETCODE_USERNAME", "pallav")
+
+PROCESS_SCAN_SECONDS = int(os.getenv("DEVSTREAK_PROCESS_SCAN_SECONDS", "30"))
+LEETCODE_POLL_MINUTES = int(os.getenv("DEVSTREAK_LEETCODE_POLL_MINUTES", "10"))
